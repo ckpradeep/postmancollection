@@ -1,0 +1,12 @@
+{
+  "name": "apihealthcheck",
+  "version": "1.0.0",
+  "description": "This collection check health status of API's",
+  "scripts": {
+    "test": "newman run APIHealthCheck.postman_collection.json"
+  },
+  "author": "Pradeep Chintakunta",
+  "dependencies": {
+    "newman": "^5.0.0"
+  }
+}
