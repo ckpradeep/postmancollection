@@ -1,11 +1,22 @@
 {
-  "name": "apihealthcheck",
+  "name": "apihealthcheck_npm",
   "version": "1.0.0",
-  "description": "This collection check health status of API's",
+  "description": "API HealthCheck",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
-    "test-collection": "newman run APIHealthCheck.postman_collection.json --disable-unicode --reporters cli,htmlextra --reporter-htmlextra-export "newman\APIHealthCheck.html" --reporter-htmlextra-title "API HEALTH REPORT" --reporter-htmlextra-logs"
+    "test-collection": "newman run APIHealthCheck.postman_collection.json --disable-unicode --reporters cli,htmlextra --reporter-htmlextra-export "newman\APIHealthCheck.html" --reporter-htmlextra-title "GEMINI - API HEALTH REPORT" --reporter-htmlextra-logs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckpradeep/postmancollection.git"
   },
   "author": "Pradeep Chintakunta",
+  "bugs": {
+    "url": "https://github.com/ckpradeep/postmancollection/issues"
+  },
+  "homepage": "https://github.com/ckpradeep/postmancollection#readme",
   "dependencies": {
     "newman": "^5.0.0"
   }
