@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This collection check health status of API's",
   "scripts": {
-    "test-collection": "newman run APIHealthCheck.postman_collection.json"
+    "test-collection": "newman run APIHealthCheck.postman_collection.json --disable-unicode --reporters cli,htmlextra --reporter-htmlextra-export "newman\APIHealthCheck.html" --reporter-htmlextra-title "API HEALTH REPORT" --reporter-htmlextra-logs"
   },
   "author": "Pradeep Chintakunta",
   "dependencies": {
